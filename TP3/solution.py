@@ -5,8 +5,6 @@ fichier contenant une liste de mots que l'on appelera dans notre jeu du pendu
 
 """
 
-from random import randint
-
 def trie(solution):
     """
     fontion qui permet de classés les mots d'une liste par taille puis par ordre alphabétique

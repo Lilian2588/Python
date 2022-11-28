@@ -5,9 +5,7 @@ fichier qui contient la fonction permetttant de choisir un mot au hasard dans un
 """
 from solution import trie
 from random import randint
-lst=["chat","souris","anticonstitutionnellement","interface","composants","application","carré"]
-
-def mot_au_hasard():
+def mot_au_hasard(lst):
     """
     fonction qui permet de renvoyer un mot de notre liste au hasard
     entrée= none
