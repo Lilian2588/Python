@@ -6,7 +6,8 @@
 
 """
 
-from solution import mot_au_hasard
+from random_word import mot_au_hasard
+from replace_blank import replace_blank
 
 solution = mot_au_hasard()
 
