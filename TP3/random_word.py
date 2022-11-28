@@ -3,7 +3,8 @@ Augustin Glemet/ Lilian saglibene
 28/11/2022
 fichier qui contient la fonction permetttant de choisir un mot au hasard dans une liste
 """
-
+from solution import trie
+from random import randint
 lst=["chat","souris","anticonstitutionnellement","interface","composants","application","carré"]
 
 def mot_au_hasard():
