@@ -14,11 +14,11 @@ def trie(solution):
   
     
 lst=["chat","souris","anticonstitutionnellement","interface","composants","application","carré"]
-mot=trie(lst)
 
-def mot_au_hasard(mot):
+def mot_au_hasard():
+    mot=trie(lst)
     i=randint(0,len(mot)-1)
     mot_au_hasard = mot[i]
     return(mot_au_hasard)
     
-print (mot_au_hasard(mot))
+print (mot_au_hasard())
