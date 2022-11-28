@@ -8,7 +8,9 @@
 """
 def est_vide(L) : 
     if len(L) == 0 : 
-        return False 
-    else : 
         return True
+    for i in range(len(L)) : 
+        if L[i] != -1  :
+            return False 
+    return True 
     

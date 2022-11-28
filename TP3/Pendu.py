@@ -7,7 +7,10 @@
 """
 
 from replace_blank import replace_blank
+from verification_lettre import verif_lettre 
+from est_vide import est_vide
 from ens_sol import mot
+from aucun_underscore import aucun_tiret
 
 #On import le mot depuis le fichier où on stocke notre ensemble mots
 solution = mot
@@ -19,16 +22,19 @@ print(len(letter))
 #On affiche des "underscore" pour cacher le mot
 underscore=[]
 underscore.append(letter[0])
-for i in range (1, len(solution) - 1) : 
+for i in range (1, len(letter)) : 
     underscore.append("_")
 
-for i in range(1, 8):
-    for i in range(0, len(letter)-1):
-        print(underscore[i])
-    prop_lettre = input("Proposer une lettre")
-    underscore = replace_blank(underscore, prop_lettre, solution)
-
-
+erreur = 0
+while erreur != 8 and not(aucun_tiret(underscore)) :
+    print(underscore)
+    prop_lettre = input("Proposer une lettre") 
+    print(verif_lettre(prop_lettre, solution))
+    if est_vide(verif_lettre(prop_lettre, solution)) :
+        erreur += 1
+    else : 
+        underscore = replace_blank(underscore, prop_lettre, solution)
+    print(underscore)
 
 
 

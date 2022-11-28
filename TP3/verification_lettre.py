@@ -9,9 +9,9 @@
 def verif_lettre(lettre_prop, solution):
     lettre_sol=list(solution) 
     list_indice=[-1 for i in range(len(lettre_sol))]
-    for i in range(len(lettre_sol)-1):
+    for i in range(len(lettre_sol)):
         if lettre_prop == lettre_sol[i]:
-            list_indice[i] = i 
+            list_indice[i]=i
     return list_indice
         
             

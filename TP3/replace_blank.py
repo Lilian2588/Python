@@ -19,8 +19,9 @@ def replace_blank(underscore, lettre_prop, solution) :
 
     """
     if not(est_vide(verif_lettre(lettre_prop, solution))) : 
-        for i in range(verif_lettre) : 
-            underscore[i] == lettre_prop
+        for i in range(len(verif_lettre(lettre_prop, solution))) : 
+            if verif_lettre(lettre_prop, solution)[i] == i :
+                underscore[i] = lettre_prop
     else :
         return
     return underscore
