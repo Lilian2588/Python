@@ -5,8 +5,20 @@
     Objectif : Créer une fonction pour remplacer les underscore par la lettre
 
 """
-def replace_blank(underscore, lettre_prop) :
-    if not(est_vide(verif_lettre)) : 
+
+from est_vide import est_vide 
+from verification_lettre import verif_lettre
+
+
+def replace_blank(underscore, lettre_prop, solution) :
+    """
+        entrées : - underscore(liste) qui représente à la base une liste de underscore
+                  - lettre_prop (str) qui représente la lettre que propose l'utilisateur
+                  - solution (str) qui représente la solution du pendu
+        sortie : renvoie une liste ( underscore) ou les underscore correspondant seront remplacés par les lettres(correctes)
+
+    """
+    if not(est_vide(verif_lettre(lettre_prop, solution))) : 
         for i in range(verif_lettre) : 
             underscore[i] == lettre_prop
     else :

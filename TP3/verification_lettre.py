@@ -6,14 +6,12 @@
 
 """
 
-def verif_lettre(lettre_pro, solution):
-    list_indice=[]
+def verif_lettre(lettre_prop, solution):
     lettre_sol=list(solution) 
+    list_indice=[-1 for i in range(len(lettre_sol))]
     for i in range(len(lettre_sol)-1):
-        if lettre_pro == lettre_sol[i]:
+        if lettre_prop == lettre_sol[i]:
             list_indice[i] = i 
-        else :
-            return("Perdu, la lettre n'est pas présente dans le mot")
     return list_indice
         
             

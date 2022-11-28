@@ -6,21 +6,31 @@
 
 """
 
-from random_word import mot_au_hasard
 from replace_blank import replace_blank
+from ens_sol import mot
 
-solution = mot_au_hasard()
+#On import le mot depuis le fichier où on stocke notre ensemble mots
+solution = mot
+print(solution)
 
 #On affiche la première lettre du mot
 letter = list(solution)
-print(letter[0])
+print(len(letter))
 #On affiche des "underscore" pour cacher le mot
 underscore=[]
-underscore[0]=letter[0]
-for i in range (1, len(solution)-1) : 
-    underscore[i] = "_"
+underscore.append(letter[0])
+for i in range (1, len(solution) - 1) : 
+    underscore.append("_")
 
-prop_lettre = input("Entrer une lettre")
+for i in range(1, 8):
+    for i in range(0, len(letter)-1):
+        print(underscore[i])
+    prop_lettre = input("Proposer une lettre")
+    underscore = replace_blank(underscore, prop_lettre, solution)
+
+
+
+
 
 
 
