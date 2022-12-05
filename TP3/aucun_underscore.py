@@ -8,6 +8,6 @@
 
 def aucun_tiret(liste):
     for i in range(1,len(liste)) :
-        if liste[i]=="_" :
+        if liste[i] == "_" :
             return False 
     return True

@@ -8,9 +8,9 @@ from random import randint
 
 def mot_au_hasard(lst):
     """
-    fonction qui permet de renvoyer un mot de notre liste au hasard
-    entrée= none
-    sortie: liste de caractère
+        fonction qui permet de renvoyer un mot de notre liste au hasard
+        entrée= none
+        sortie: liste de caractère
     """
     mot = trie(lst)
     i = randint(0,len(mot)-1)
